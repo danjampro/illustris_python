@@ -5,7 +5,7 @@ def partTypeNum(partType):
     """ Mapping between common names and numeric particle types. """
     if str(partType).isdigit():
         return int(partType)
-        
+
     if str(partType).lower() in ['gas','cells']:
         return 0
     if str(partType).lower() in ['dm','darkmatter']:
@@ -18,5 +18,5 @@ def partTypeNum(partType):
         return 4 # only those with GFM_StellarFormationTime<0
     if str(partType).lower() in ['bh','bhs','blackhole','blackholes']:
         return 5
-    
+
     raise Exception("Unknown particle type name.")

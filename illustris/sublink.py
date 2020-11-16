@@ -7,8 +7,8 @@ import glob
 import six
 import os
 
-from .groupcat import gcPath, offsetPath
-from .util import partTypeNum
+from illustris.groupcat import gcPath, offsetPath
+from illustris.util import partTypeNum
 
 
 def treePath(basePath, treeName, chunkNum=0):

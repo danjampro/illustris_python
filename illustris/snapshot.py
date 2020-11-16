@@ -5,8 +5,8 @@ from __future__ import print_function
 import numpy as np
 import h5py
 import six
-from .util import partTypeNum
-from .groupcat import gcPath, offsetPath
+from illustris.util import partTypeNum
+from illustris.groupcat import gcPath, offsetPath
 
 
 def snapPath(basePath, snapNum, chunkNum=0):

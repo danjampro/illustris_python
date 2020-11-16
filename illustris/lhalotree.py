@@ -1,12 +1,12 @@
 """ Illustris Simulation: Public Data Release.
 lhalotree.py: File I/O related to the LHaloTree merger tree files. """
+from os.path import isfile
 
 import numpy as np
 import h5py
 import six
 
-from .groupcat import gcPath, offsetPath
-from os.path import isfile
+from illustris.groupcat import gcPath, offsetPath
 
 
 def treePath(basePath, chunkNum=0):
